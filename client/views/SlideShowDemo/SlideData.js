@@ -1,4 +1,7 @@
 
+
+
+
 SlideData = {
     userId: '109813050055185479846',
     albumId: '6013105701911614529',
@@ -23,6 +26,3 @@ SlideData.parse = function(data) {
 };
 
 
-//Reactivity
-Session.setDefault('defaultImage', 'https://lh4.googleusercontent.com/-HbYp2q1BZfQ/U3LXxmWoy7I/AAAAAAAAAJk/VqI5bGooDaA/s1178-no/1.jpg');
-Template.SlideshowView.getImg = function() { return Session.get('defaultImage'); };

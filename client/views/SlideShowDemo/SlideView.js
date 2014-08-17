@@ -7,9 +7,11 @@ var Transform = require('famous/core/Transform');
 var Easing = require('famous/transitions/Easing');
 
 
+
 famousCmp.ready(function(require) {
     famousCmp.registerView('ImageSurface',  famous.surfaces.ImageSurface);
     famousCmp.registerView('Surface',  famous.core.Surface);
+
 });
 
 Template.Back.rendered = function() {

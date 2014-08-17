@@ -1,20 +1,27 @@
 
 <template name="SlideShowApp">
 
-    {{>View size="[undefined, undefined]" template="AppView"}}
+    {{>View size="[undefined, undefined]" template="AppView" data=undefined}}
 </template>
 
 
 <template name="AppView">
 
-    {{>View size="[450, 500]" template="SlideshowView" origin="[0.5,0]" align="[0.5,0]"}}
+    {{>View size="[450, 500]" data=getData template="SlideshowView" lighboxOpts="{}" origin="[0.5,0]" align="[0.5,0]"}}
 
 </template>
 
 <template name="SlideshowView">
 
-    {{>View size="[400, 500]" filmBorder="15" template="SlideView" photoBorder="3"
-    photoUrl=getImg}}
+    {{#Lightbox}}
+
+    {{/Lightbox}}
+
+    <!--{{#famousEach getData}}-->
+        {{>View size="[400, 500]" photoBorder="3" photoUrl=getImg filmBorder="15" template='SlideView'}}
+    <!--{{/famousEach}}-->
+
+
 
 
 </template>
@@ -28,6 +35,7 @@
 
 </template>
 
+<template name="Lightbox"></template>
 <template name="Back"></template>
 <template name="Film"></template>
 <template name="Pic"></template>
