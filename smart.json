@@ -1,7 +1,10 @@
 {
   "packages": {
     "famono": {},
-    "famous-components": {},
+    "famous-components": {
+        "git": "https://github.com/gadicc/meteor-famous-components.git",
+        "tag" : "v0.0.15"
+    },
     "iron-router": {}
   }
 }
